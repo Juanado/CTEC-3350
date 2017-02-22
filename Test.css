@@ -1,0 +1,179 @@
+html, body {
+	font-size: 100%;
+}
+
+body, h1, h2, p, q {
+	margin: 0 auto;
+	padding: 0;
+    width: 65%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+body {
+	box-sizing: border-box;
+    line-height: 13px;
+	font-family: serif;
+    
+}
+
+
+@media screen and (max-width: 30em)
+{
+	.container {
+		margin:auto;
+	}
+
+	h1 {
+        font-size: 50px;
+		line-height: 26px;
+        margin-bottom: 26px;
+        margin-top: 26px;
+        border-bottom: 3px dotted grey;
+
+	}
+
+	h2 {
+        font-size: 28px;
+        line-height: 26px;
+        
+        border-bottom: 3px dotted grey;
+	}
+
+	p {
+        font-size: 16px;
+        line-height: 13px;
+        margin-bottom: 13px;
+        margin-top: 13px;
+        border-bottom: 3px dotted grey;
+	
+	}
+}
+
+@media screen and (min-width:30.01em) and (max-width: 48em)
+{
+	.container {
+		margin:auto;
+	}
+
+	h1 {
+        font-size: 50px;
+		line-height: 26px;
+        margin-bottom: 26px;
+        margin-top: 26px;
+        border-bottom: 3px dotted grey;
+
+	}
+
+	h2 {
+        font-size: 28px;
+        line-height: 26px;
+        
+        border-bottom: 3px dotted grey;
+	}
+
+	p {
+        font-size: 16px;
+        line-height: 13px;
+        margin-bottom: 13px;
+        margin-top: 13px;
+        border-bottom: 3px dotted grey;
+	
+	}
+}
+
+@media screen and (min-width:48.01em) and (max-width: 60em)
+{
+	.container {
+		margin:auto;
+	}
+
+	h1 {
+        font-size: 50px;
+		line-height: 26px;
+        margin-bottom: 26px;
+        margin-top: 26px;
+        border-bottom: 3px dotted grey;
+
+	}
+
+	h2 {
+        font-size: 28px;
+        line-height: 26px;
+        
+        border-bottom: 3px dotted grey;
+	}
+
+	p {
+        font-size: 16px;
+        line-height: 13px;
+        margin-bottom: 13px;
+        margin-top: 13px;
+        border-bottom: 3px dotted grey;
+	
+	}
+}
+@media screen and (min-width:60.01em) and (max-width: 80em)
+{
+	.container {
+		margin:auto;
+	}
+
+	h1 {
+        font-size: 50px;
+		line-height: 26px;
+        margin-bottom: 26px;
+        margin-top: 26px;
+        border-bottom: 3px dotted grey;
+
+	}
+
+	h2 {
+        font-size: 28px;
+        line-height: 26px;
+        
+        border-bottom: 3px dotted grey;
+	}
+
+	p {
+        font-size: 16px;
+        line-height: 13px;
+        margin-bottom: 13px;
+        margin-top: 13px;
+        border-bottom: 3px dotted grey;
+	
+	}
+}
+@media screen and (min-width:80.01em) 
+{
+	.container {
+		margin:auto;
+	}
+
+	h1 {
+        font-size: 50px;
+		line-height: 26px;
+        margin-bottom: 26px;
+        margin-top: 26px;
+        border-bottom: 3px dotted grey;
+
+	}
+
+	h2 {
+        font-size: 28px;
+        line-height: 26px;
+        
+        border-bottom: 3px dotted grey;
+	}
+
+	p {
+        font-size: 16px;
+        line-height: 13px;
+        margin-bottom: 13px;
+        margin-top: 13px;
+        border-bottom: 3px dotted grey;
+	
+	}
+}
