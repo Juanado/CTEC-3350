@@ -8,7 +8,7 @@ body{
 }
 
 h1{
-    font-size: 2.618em;
+    font-size: 1.777em;
     line-height: 3rem;
     margin: 1rem auto 2rem auto;
     color: #888888;
@@ -17,7 +17,7 @@ h1{
 }
 
 h2{
-    font-size: 1.618em;
+    font-size: 1.333em;
     line-height: 2rem;
     margin: 1rem auto 2rem auto;
     color: #cccccc;
@@ -27,7 +27,7 @@ h2{
 
 p{
     font-size: 1em;
-    line-height: 1.25rem; 
+    line-height: 1rem; 
     margin: 1rem auto 2rem auto;
     color: #222222;
     font-family: serif;
@@ -45,7 +45,7 @@ q{
 @media screen and (max-width: 30em)
 {
     html, body{
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .container{
@@ -57,7 +57,7 @@ q{
 @media screen and (min-width: 30.01em) and (max-width: 48em)
 {
     html, body{
-    font-size: 28px;
+    font-size: 18px;
 }
 
 .container{
@@ -70,7 +70,7 @@ q{
 @media screen and (min-width: 48.01em) and (max-width:60em)
 {
     html, body{
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .container{
@@ -83,7 +83,7 @@ q{
 @media screen and (min-width: 60.01em) and (max-width: 80em)
 {
     html, body{
-    font-size: 36px;
+    font-size: 22px;
 }
 
 .container{
@@ -97,7 +97,7 @@ q{
 @media screen and (min-width: 80.01em)
 {
 html, body{
-    font-size: 40px;
+    font-size: 24px;
 }
 
 .container{

@@ -5,15 +5,24 @@
     <meta charset="utf-8">
 	<style>
         
+        body{
+            font-family: Verdana, Verdana, Geneva, sans-serif;
+            font-size: 16px;
+        }
+        
+        
         table{
             border-collapse: collapse;
+            margin: 0px auto;
         }
         caption{
             background-color: gray;
+            color: white;
         }
         
         th, td{
-            padding: 5px;
+            border: 1px solid black;
+            padding: 10px;
         }
         
         th {
@@ -21,19 +30,20 @@
             text-align: right;
         }
         
-        .aligner {
-            text-align:center;
+        tr:nth-child(4n+1) th:first-child{
+            text-align: center;
+            padding: 0 30px;
         }
         
     </style>
 </head>
 <body>
-    <table border="1">
+    <table>
     
     <caption>Table Exercise 2</caption>
     
     <tr>
-        <th rowspan="4" class="aligner">Texas</th>
+        <th rowspan="4">Texas</th>
         <th>Admission to Union:</th>
         <td>December 29, 1845</td>
     </tr>
@@ -54,7 +64,7 @@
     </tr>
     
     <tr>
-        <th rowspan="4" class="aligner">Georgia</th>
+        <th rowspan="4">Georgia</th>
         <th>Admission to Union:</th>
         <td>July 15, 1870 (Restored to the Union)</td>
     </tr>
@@ -75,7 +85,7 @@
     </tr>
     
     <tr>
-        <th rowspan="4" class="aligner">Colorado</th>
+        <th rowspan="4">Colorado</th>
         <th>Admission to Union:</th>
         <td>August 1, 1876</td>
     </tr>
@@ -95,3 +105,5 @@
         <td>Rocky Mountain bighorn sheep</td>
     </tr>
     </table>
+    </body>
+</html>
