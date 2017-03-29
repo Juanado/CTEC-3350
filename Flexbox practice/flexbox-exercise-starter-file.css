@@ -18,7 +18,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Crete Round', serif;
+  font-family: 'Crete Round', sans-serif;
   font-weight: normal;
 }
 
@@ -107,7 +107,10 @@ img.img-responsive {
 @media screen and (max-width: 30em)
 {
     .bio-container {
-        flex-direction: column;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
     }
     
     .bio-title, .bio-pic, .bio-description{
@@ -128,8 +131,10 @@ img.img-responsive {
 @media screen and (min-width:30.01em) and (max-width: 48em)
 {
   .bio-container {
-    flex-direction: column;
-  }
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    }
   
   .bio-title, .bio-pic, .bio-description {
     flex: 1 100%;
@@ -147,17 +152,53 @@ img.img-responsive {
 @media screen and (min-width:48.01em) and (max-width: 60em)
 {
   .bio-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    flex-wrap: wrap;
   }
+    
+    .bio-title, .bio-pic, .bio-description{
+        flex:1 100%;
+    }
+    
+    .bio-pic{
+        order: 2;
+    }
+    
+    .bio-description{
+        order: 3;
+    }
 
 }
 
 @media screen and (min-width:60.01em) and (max-width: 80em)
 {
-    
+.bio-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  border: 1px solid #444444;
+}
 }
 
 @media screen and (min-width:80.01em) 
 {
-
+.bio-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  border: 1px solid #444444;
+}
 }
