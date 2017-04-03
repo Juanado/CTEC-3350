@@ -3,46 +3,120 @@
 <head>
     <title>Form Practice</title>
     <meta charset="utf-8">
-    
-    
-    
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
-        <label>Username:<input type="text" name="username" id="username" placeholder="Username" maxlenght="30"/></label>
-<br>
-        <label>E-mail:<input type="text" name="Email" id="Email" placerholder="E-mail" maxlenght="40"></label>
-<br>
-        <label>Password:<input type="text" name="password" id="password"></label>
-<br>
-        <label>Confirm Password:<input type="text" name="password" id="password"></label>
-<br>
-        <label>Favorite day of the week:</label>
-        <select>
-            <option value="Monday">Monday</option>
-            <option value="Tuesday">Tuesday</option>
-            <option value="Wednesday">Wednesday</option>
-            <option value="Thursday">Thursday</option>
-            <option value="Friday">Friday</option>
-            <option value="Saturday">Saturday</option>
-            <option value="Sunday">Sunday</option>
-        </select>
-<br>
-        <label>Social Media of Choice</label><br>
-        <input type="checkbox" name="socialmedia" id="socialmedia" value="T" />Facebook
-        <input type="checkbox" name="socialmedia" id="socialmedia" value="T" />Twitter
-        <input type="checkbox" name="socialmedia" id="socialmedia" value="I" />Instagram
-        <input type="checkbox" name="socialmedia" id="socialmedia" value="P" />Pinterest
-<br>
-        <label>Street Address:<input type="text" name="streetaddress" id="streetaddress" placeholder="streetaddress"></label>
-<br>
-        <label>Zip Code:<input type="number" name="zipcode" id="zipcode"></label>
-<br>
-        <label>City:<input type="text" name="city" id="city"></label>
-<br>
-        Comments<textarea name=‘comments’></textarea>
+    <form method="post" action="registration.php" name="registration">
+        <fieldset>
+            <legend>Customer Registration</legend>
+            
+            <h3>Account Set Up</h3>
+            <div class="form-group">
+            <label for="username">Username:</label>
+            <div class="form-control">
+            <input type="text" name="username" id="username" placeholder="Username"/>
+            </div>
+            </div>
 
+            <div class="form-group">
+            <label for="Email">E-mail:</label>
+            <div class="form-control">
+            <input type="text" name="Email" id="Email" placerholder="E-mail" maxlenght="40" placeholder="E-Mail">
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="password">Password:</label>
+            <div class="form-control">
+            <input type="password" name="password" id="password">
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="password">Confirm Password:</label>
+            <div class="form-control">
+            <input type="text" name="passwordconfirmation" id="passwordconfirmation">
+            </div>
+            </div>
+
+            <h3>Weekly Reminder Preferences</h3>
+            <div class="form-group">
+            <label>Favorite day of the week:</label>
+            <div class="form-control">
+            <select>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            </div>
+            </div>
+            
+            <h3>Social Media</h3>
+            <div class="form-group">
+            <label for="socialmedia">Social Media of Choice:</label>
+            <div class="form-control">
+                <label><input type="checkbox" name="socialmedia" id="socialmedia" value="Facebook"/>Facebook</label>
+                <label><input type="checkbox" name="socialmedia" value="Twitter" />Twitter</label>
+            <label><input type="checkbox" name="socialmedia" value="Instagram" />Instagram</label>
+            <label><input type="checkbox" name="socialmedia" value="Pinterest" />Pinterest</label>
+            </div>
+            </div>
+
+            <h3>Mailing Information</h3>
+            <div class="form-group">
+            <label for="firstName">FirstName:</label>
+            <div class="form-control">
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+            </div>
+            </div>
         
+            <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <div class="form-control">
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+            </div>
+            </div>
+            
+            <div class="form-group">
+            <label for="streetaddress">Street Address:</label>
+            <div class="form-control">
+            <input type="text" name="streetaddress" id="streetaddress" placeholder="streetaddress">
+            </div>
+            </div>
+            
+            <div class="form-group">
+            <label for="city">City:</label>
+            <div class="form-control">
+            <input type="text" name="city" id="city" placeholder="City">
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="state">State:</label>
+            <div class="form-control">
+            <input type="text" name="state" id="state" maxlength="2" placeholder="ST" />
+            </div>
+            </div>
+            
+            <div class="form-group">
+            <label for="zipcode">Zip Code:</label>
+            <div class="form-control">
+            <input type="number" name="zipcode" id="zipcode" placeholder="XXXX">
+            </div>
+            </div>
+
+            <h3>Other Relevant Information</h3>
+            <div class="form-group">
+            <label for="comments">Comments:</label>
+            <div class="form-control">
+            <textarea name="comments" id="comments" cols="40" rows="6"></textarea>
+            </div>
+            </div>
+        </fieldset>   
     </form>
 </body>
 </html>
