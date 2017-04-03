@@ -3,7 +3,7 @@
 <head>
     <title>Form Practice</title>
     <meta charset="utf-8">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="stylesz.css">
 </head>
 <body>
     <form method="post" action="registration.php" name="registration">
@@ -35,7 +35,7 @@
             <div class="form-group">
             <label for="password">Confirm Password:</label>
             <div class="form-control">
-            <input type="text" name="passwordconfirmation" id="passwordconfirmation">
+            <input type="password" name="passwordconfirmation" id="passwordconfirmation">
             </div>
             </div>
 
@@ -84,14 +84,14 @@
             <div class="form-group">
             <label for="streetaddress">Street Address:</label>
             <div class="form-control">
-            <input type="text" name="streetaddress" id="streetaddress" placeholder="streetaddress">
+            <input type="text" name="streetaddress" id="streetaddress" placeholder="streetaddress"/>
             </div>
             </div>
             
             <div class="form-group">
             <label for="city">City:</label>
             <div class="form-control">
-            <input type="text" name="city" id="city" placeholder="City">
+            <input type="text" name="city" id="city" placeholder="City"/>
             </div>
             </div>
 
@@ -105,7 +105,7 @@
             <div class="form-group">
             <label for="zipcode">Zip Code:</label>
             <div class="form-control">
-            <input type="number" name="zipcode" id="zipcode" placeholder="XXXX">
+            <input type="number" name="zipcode" id="zipcode" placeholder="XXXX"/>
             </div>
             </div>
 
@@ -116,6 +116,7 @@
             <textarea name="comments" id="comments" cols="40" rows="6"></textarea>
             </div>
             </div>
+            <input type="submit" value="Submit">
         </fieldset>   
     </form>
 </body>

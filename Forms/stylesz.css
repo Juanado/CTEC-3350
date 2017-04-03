@@ -1,18 +1,18 @@
-/* Form CSS */
-* {
-  margin: 0;
-  padding: 0;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-body {
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 16px;
-  color: #666666;
-  padding: 1.5rem;
+body{
+    font-family: Verdana, Aerial, sans-serif;
+    font-size: 16px;
+    color: #666666;
+    padding: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
+  text-align: center;
 }
 
 h3 {
@@ -22,26 +22,28 @@ h3 {
 }
 
 form {
-  width: 100%;
+  width: 70%;
+  margin: auto;
 }
 
 form fieldset {
   padding: 1rem;
+  text-align: center;
 }
 
 .form-group {
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: baseline;
-  
-  align-content: center;
-  margin-bottom: 1rem;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    
+    align-content: center;
+    margin-bottom: 1rem
 }
 
 .form-group > label {
@@ -50,8 +52,13 @@ form fieldset {
   text-align: right;
 }
 
+select, option {
+font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+
 .form-control {
-  flex: 1 80%;
+  flex: 1 20%;
   
   display: -webkit-flex;
   display: flex;
@@ -60,7 +67,7 @@ form fieldset {
   flex-direction: column;
   
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: baseline;
   
   align-content: center;
