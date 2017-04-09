@@ -1,9 +1,11 @@
 /* BEM Styles Only */
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
+
+
 .toc {
   position: fixed;
-  top: 100;
+  top: 170px;
   right: 0;
 }
 
@@ -42,6 +44,10 @@
   font-weight: 300;
 }
 
+.toc ul ul li {
+  margin: 0;
+}
+
 
 
 
@@ -55,7 +61,7 @@
 }
 
 pre {
-  font-family: 'Source Code Pro', monospace;
+  font-family: font-family: Arial, Times New Roman, sans-serif;
   overflow: hidden;
 }
 
@@ -84,4 +90,28 @@ pre {
   margin: 1rem -1rem -1rem;
   border-radius: 0 0 0.5rem 0.5rem;
   box-sizing: border-box;
+}
+
+
+
+@media (max-width: 768px) {
+  .responsive-hidden {
+    display: none;
+  }
+}
+
+
+
+ul.classes-used {
+  margin: 0 0 2rem 1rem;
+  list-style-type: none;
+}
+
+ul.classes-used ul {
+  margin-top: 0;
+  list-style-type: none;
+}
+
+ul.classes-used li {
+  margin: 0;
 }

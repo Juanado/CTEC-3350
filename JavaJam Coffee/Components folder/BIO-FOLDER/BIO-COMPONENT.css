@@ -1,0 +1,46 @@
+.bio {
+  margin: 0 auto;
+  max-width: 700px;
+  font-family: Arial, Times New Roman, sans-serif;
+}
+
+.bio-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  border: 1px solid #444444;
+}
+
+.bio-title {
+  order: 1;
+  flex: 1 100%;
+  flex-grow: 2;
+  padding: 0.625rem;
+  background-color: #444444;
+}
+
+.bio-title h3 {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.bio-pic {
+  order: 2;
+  flex: 1 40%;
+}
+
+.bio-pic img {
+  max-width: 100%;
+}
+
+.bio-description {
+  order: 3;
+  flex: 1 55%;
+  padding: 2.5%;
+}
