@@ -24,6 +24,20 @@
   color: white;
 }
 
+.activities-title h1{
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.activities-title h2{
+
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+
 .activities-Current{
   order: 2;
   flex: 1 40%;

@@ -1,0 +1,34 @@
+.navi {
+    margin:0;
+    font-family: Arial, Times New Roman, sans-serif;
+}
+#logo { float: left;
+        background-color: white;
+        width: 55px;
+        height: auto;}
+.navig ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navig ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navig ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navig ul li a:hover{
+    background-color: #B2B2FF;
+}

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="components/BIO-FOLDER/BIO-COMPONENT.css">
     <link rel="stylesheet" href="Components/DRINKS-FOLDER/DRINKS-COMPONENT.css">
     <link rel="stylesheet" href="Components/FAQ-FOLDER/FAQ-COMPONENT.css">
-    <link rel="styelsheet" href="Components/ACTIVITIES-FOLDER/ACTIVITIES-COMPONENT.css">
+    <link rel="stylesheet" href="Components/ACTIVITIES-FOLDER/ACTIVITIES-COMPONENT.css">
     <link rel="stylesheet" href="Components/GALLERY-FOLDER/GALLERY-COMPONENT.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -24,7 +24,7 @@
         <div class="col-md-12">
           <header>
             <div class="brand">
-              <a href="index.html"><img src="Assets/images/JavaJamLogoBlack.svg" /></a>
+              <a href="index.html"><img src="https://enlightenment.design/wp-content/uploads/2017/03/JavaJam-Logo-4C.png" /></a>
             </div>
             <div class="navigation">
               <ul class="nav-bar">
@@ -53,10 +53,13 @@
           <p>This component is meant to be accessed through the home page, allowing the user to see the bio of the local and the owner. It can also be used for more members if wished to do so.</p>
           <h3>Classes</h3>
           <ul class="classes-used">
-            <li>.menu-favorites</li>
-            <li>.menu-favorites-image
+            <li>.bio</li>
+            <li>.bio-container
               <ul>
-                <li>.menu-favorites-images span</li>
+                <li>.bio-title</li>
+                <li>.bio-title h3</li>
+                <li>.bio-pic</li>
+                <li>.bio-description</li>
               </ul>
             </li>
           </ul>
@@ -107,11 +110,15 @@
               <li>.drinks-container
               <ul>
                 <li>.drinks-header</li>
+                <li>.drinks-header h1</li>
                 <li>.drinks-menu-container
                   <ul>
                   <li>.drinks-menu-title</li>
+                  <li>.drinks-title h3</li>
                   <li>.drinks-menu1</li>
                   <li>.drinks-menu2</li>
+                  <li>.drinks ul</li>
+                  <li>.drinks ul li:hover</li>
                   </ul>
                   </li>
               </ul>
@@ -294,15 +301,18 @@
               <li>.activities-container
               <ul>
                 <li>.activities-title</li>
+                <li>.activities-title h1</li>
+                <li>.activities-title h2</li>
                 <li>.activities-current</li>
                 <li>.activities-upcoming</li>
+                <li>.activities ul</li>
+                <li>.activities ul li:hover</li>
               </ul>
             </li>
           </ul>
            
-              
           <div id="css-components" class="content-area">
-          <h3 id="activities-component">Drinks Component</h3>
+          <h3 id="activities-component">Activities Component</h3>
            <div class="activities">
 <div class="activities-container">
     <div class="activities-title">
@@ -324,17 +334,15 @@
     <h2>Upcoming</h2>
     </div>
     <ul>
-        <li>Comedy Routine</li>
-        <li>Talk show</li>
-        <li>Guest Singers</li>
-        <li>Stand Up Comedy Night</li>
+        <li>05/18/2017: Comedy Routine</li>
+        <li>05/19/2017: Talk show</li>
+        <li>05/20/2017: Guest Singers</li>
+        <li>05/21/2017: Stand Up Comedy Night</li>
     </ul>
     </div>
     
     </div>
-    </div>   
-        
-              
+    </div>
 <div class="sample-only">
 <pre>
 <code>               
@@ -359,10 +367,10 @@
     &lt;h2&gt;Upcoming&lt;/h2&gt;
     &lt;/div&gt;
     &lt;ul&gt;
-        &lt;li&gt;Comedy Routine&lt;/li&gt;
-        &lt;li&gt;Talk show&lt;/li&gt;
-        &lt;li&gt;Guest Singers&lt;/li&gt;
-        &lt;li&gt;Stand Up Comedy Night&lt;/li&gt;
+        &lt;li&gt;05/18/2017: Comedy Routine&lt;/li&gt;
+        &lt;li&gt;05/19/2017: Talk show&lt;/li&gt;
+        &lt;li&gt;05/20/2017: Guest Singers&lt;/li&gt;
+        &lt;li&gt;05/21/2017: Stand Up Comedy Night&lt;/li&gt;
     &lt;/ul&gt;
     &lt;/div&gt;
     
@@ -383,7 +391,21 @@
           <h2 id="FAQComponent" class="top-spacing">FAQ Component</h2>
           <p>This component is meant to put on display the frequently asked questions by users about JavaJam. This component's number of questions and answers can be easily altered to meet the needs of both the owner and the people.</p>
           <h3>Classes</h3>
-          
+          <ul class="classes-used">
+              <li>.faq
+              <ul>
+                  <li>.faq-container
+                  <ul>
+                  <li>.faq-title</li>
+                  <li>.faq-title h1</li>
+                  <li>.faq-question</li>
+                  <li>.faq-question p</li>
+                  <li>.faq-answer</li>
+                  </ul>
+                  </li>
+              </ul>
+              </li>
+          </ul>
           <div id="css-components" class="content-area">
           <h3 id="faq-component">FAQ Component</h3>
           <div class="faq">
@@ -467,7 +489,26 @@
           <h2 id="GalleryComponent" class="top-spacing">Gallery Component</h2>
           <p>The purpose of this component is to provide users with visuals from JavaJam. Images can not only be changed, but also added to this Gallery. Computer users can use the mouse to hover over the pictures to obtain a slightly bigger image of the picture they are currently over. Phone users, however, will need to click on the image to obtain a bigger picture.</p>
           <h3>Classes</h3>
-          
+          <ul class="classes-used">
+            <li>.gallery
+            <ul>
+                <li>.gallery-container</li>
+                <ul>
+                 <li>.gallery-title</li>
+                 <li>.gallery-title h1</li>
+                 <li>.gallery-pictures ul</li>
+                 <li>.gallery-pictures</li>
+                 <li>.gallery-pictures ul li span</li>
+                 <li>.gallery-picture-preview a:hover span img</li>
+                 <li>.gallery-pictures ul li</li>
+                 <li>.gallery-pictures ul li img</li>
+                 <li>.gallery-picture-preview</li>
+                 <li>.gallery-picture-preview a:hover span</li>
+                 <li>.gallery-picture-preview a:hover span img</li>
+                </ul>
+            </ul>  
+            </li>
+          </ul>
           <div id="css-components" class="content-area">
           <h3 id="gallery-component">Gallery Component</h3>
               
@@ -577,7 +618,7 @@
   <div id="footer" class="container">
     <div class="row">
       <div class="col-md-12">
-        <p>All rights to CCucalon</p>
+        <p>All rights reserved to Carlos Cucalon</p>
       </div>
     </div>
   </div>
