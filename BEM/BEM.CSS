@@ -16,6 +16,7 @@ footer{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99;
 }
 
 .navbar a {
@@ -89,4 +90,17 @@ footer{
   background-color: #eee;
   white-space: pre-wrap;
   display: block;
+}
+
+.navflex{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
+  border: 1px clear black;
+  margin-bottom: 5px;
 }

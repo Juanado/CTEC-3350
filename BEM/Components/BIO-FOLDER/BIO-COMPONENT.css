@@ -22,9 +22,11 @@
   flex-grow: 2;
   padding: 0.625rem;
   background-color: #444444;
+  margin: 5px;
+  text-align: center;
 }
 
-.bio-title h3 {
+.bio-title h1 {
   color: #ffffff;
   margin: 0;
   padding: 0;

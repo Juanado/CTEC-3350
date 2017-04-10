@@ -3,7 +3,7 @@
 }
 #logo { float: left;
         background-color: white;
-        width: 55px;
+        width: 150px;
         height: auto;
         vertical-align: middle;
 }
@@ -25,7 +25,6 @@
 .navig ul li a {
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
