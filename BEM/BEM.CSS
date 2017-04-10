@@ -1,0 +1,92 @@
+/*BEM CSS*/
+/*Navigation*/
+body {
+    margin: 0 auto;
+    max-width: 90%;
+    font-family: Arial, Times New Roman, sans-serif;
+}
+
+footer{
+    text-align: center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color:#B2B2FF;
+    
+}
+
+.main{
+  padding: 16px;
+  margin-top: 30px;
+}
+
+/*Components*/
+.components{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
+  border: 1px clear black;
+  margin-bottom: 5px;
+}
+
+.components-title{
+
+    text-align: center;
+    
+}
+
+.components-desc{
+
+    text-align: center;
+}
+
+.components-classes{
+
+    text-align: center;
+}
+
+.components-classes ul li{
+    text-align: left;
+}
+
+.components-code{
+
+  background-color: #f5f5f5;
+  padding: 1rem;
+  color: #333333;
+  border-top: 1px solid #cccccc;
+  margin: 1rem -1rem -1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-sizing: border-box;
+}
+
+/*Index CSS*/
+.components pre{
+  overflow: hide;
+  background-color: #eee;
+  white-space: pre-wrap;
+  display: block;
+}

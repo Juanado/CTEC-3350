@@ -1,11 +1,12 @@
 .navi {
-    margin:0;
     font-family: Arial, Times New Roman, sans-serif;
 }
 #logo { float: left;
         background-color: white;
         width: 55px;
-        height: auto;}
+        height: auto;
+        vertical-align: middle;
+}
 .navig ul {
     list-style-type: none;
     margin: 0;

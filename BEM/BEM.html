@@ -1,58 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>JavaJam | BEM | Juan Artiles</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    <link rel="stylesheet" href="Assets/css/grid-system.css">
-    <link rel="stylesheet" href="Assets/css/code-snippets.css">
-    <link rel="stylesheet" href="Assets/css/bem-styles.css">
-    <link rel="stylesheet" href="Assets/css/typography.css">
-    <link rel="stylesheet" href="Assets/css/components.css">
+<html>
+<head>
     <link rel="stylesheet" href="components/BIO-FOLDER/BIO-COMPONENT.css">
     <link rel="stylesheet" href="Components/DRINKS-FOLDER/DRINKS-COMPONENT.css">
     <link rel="stylesheet" href="Components/FAQ-FOLDER/FAQ-COMPONENT.css">
     <link rel="stylesheet" href="Components/ACTIVITIES-FOLDER/ACTIVITIES-COMPONENT.css">
     <link rel="stylesheet" href="Components/GALLERY-FOLDER/GALLERY-COMPONENT.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="BEM.css">
+</head>
+<body>
+<header>
+<div class="components">
+<nav class="navbar">
+            
+            <a href="#BioComponent">Bio Component</a>
+            <a href="#DrinkComponent">Drink Component</a>
+            <a href="#ActivitiesComponent">Activities Component</a>
+            <a href="#FAQComponent">FAQ Component</a>
+            <a href="#GalleryComponent">Gallery Component</a>
+            <a href="BEM-index.html">Css/index</a>
 
-  </head>
-  <body>
-    <div id="nav" class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <header>
-            <div class="brand">
-              <a href="index.html"><img src="https://enlightenment.design/wp-content/uploads/2017/03/JavaJam-Logo-4C.png" /></a>
-            </div>
-            <div class="navigation">
-              <ul class="nav-bar">
-                <li><a href="index.html">CSS</a></li>
-                <li><a href="components.html">Components</a></li>
-              </ul>
-              <!--<i  class="fa fa-bars toggle-navigation" aria-hidden="true"></i>
-<div class="navbar-collapse">-->
-            </div>
-          </header>
+</nav>
+</div>
+</header>
+    
+<main class="main">
+<!--BIO COMPONENT-->
+<div class="components">
+    <div class="components-title">
+    <h2 id="BioComponent">Bio Component</h2>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h1>Components</h1>
-          <h3>How to use this resource:</h3>
-          <ol>
-            <li>Navigate to the components you'd like to use</li>
-            <li>Copy the code in the gray box</li>
-            <li>Paste it in your body content within a <code>.col-md-<i>x</i></code> to assign appropriate spacing</li>
-          </ol>
- <!--BIO COMPONENT-->         
-          <h2 id="BioComponent" class="top-spacing">Bio Component</h2>
+    <div class="components-desc">
           <p>This component is meant to be accessed through the home page, allowing the user to see the bio of the local and the owner. It can also be used for more members if wished to do so.</p>
-          <h3>Classes</h3>
-          <ul class="classes-used">
+    </div>
+    <div class="components-classes">
+        <h3>Classes</h3>
+          <ul>
             <li>.bio</li>
             <li>.bio-container
               <ul>
@@ -63,9 +46,9 @@
               </ul>
             </li>
           </ul>
-                        <div id="css-components" class="content-area">
-            <h3 id="bio-component">Bio Component</h3>
-                      <div class="bio">
+        </div>
+<div class="components-display">
+      <div class="bio">
       <div class="bio-container">
         <div class="bio-title">
           <h3>Lorem ipsum dolor sit amet</h3>
@@ -78,11 +61,11 @@
         </div>
       </div>
     </div>
-    </div>
-            <div class="sample-only">
-              <pre>
-              <code>
-    &lt;div class="bio"&gt;
+    </div> 
+   <div class="components-code">
+    <pre>
+    <code>
+         &lt;div class="bio"&gt;
       &lt;div class="bio-container"&gt;
         &lt;div class="bio-title"&gt;
           &lt;h3>Lorem ipsum dolor sit amet&lt;/h3&gt;
@@ -93,19 +76,25 @@
         &lt;div class="bio-description"&gt;
           &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ornare orci in accumsan. Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat dolor dapibus a. Phasellus scelerisque ligula ante, et pellentesque nunc dictum fringilla. Nulla eros nisi, tincidunt non consequat sit amet, porta ut leo. Morbi a turpis dolor. Donec est metus, ultrices sed sapien et, dignissim suscipit risus. Fusce feugiat eleifend commodo.&lt;/p&gt;
         &lt;/div&gt;
-      &lt;/div&gt;
-              </code>
-            </pre>
-            </div>
-        </div>
-<!--End of BIO COMPONENT-->
-          
+      &lt;/div&gt;  
+    </code>
+    </pre>
+    </div>    
+    </div>  
+
+<!--END OF BIO COMPONENT-->
+    
 <!--DRINKS COMPONENT-->
-          <div class="col-md-8">
-          <h2 id="DrinkComponent" class="top-spacing">Drinks Component</h2>
+<div class="components">
+    <div class="components-title">
+    <h2 id="DrinkComponent">Drinks Component</h2>
+    </div>
+    <div class="components-desc">
           <p>This component is meant to be used to display the current drink menu available at JavaJam. It can be easily adjusted at any team to fit more items or even take away more items.</p>
-          <h3>Classes</h3>
-          <ul class="classes-used">
+    </div>
+    <div class="components-classes">
+        <h3>Classes</h3>
+            <ul>
             <li>.drinks</li>
               <li>.drinks-container
               <ul>
@@ -123,91 +112,92 @@
                   </li>
               </ul>
             </li>
-          </ul>
-            <div id="css-components" class="content-area">
-            <h3 id="drinks-component">Drinks Component</h3>
-
-        <div class="drinks">
-<div class="drinks-container">
-<div class="drinks-header">
-<h1>Drinks page</h1>    
-</div>
+        </ul>
+    </div>
+     <div class="components-display">
+    <div class="drinks">
+        <div class="drinks-container">
+            <div class="drinks-header">
+                <h1>Drinks page</h1>    
+            </div>
     
-<div class="drinks-menu-container">
-<div class="drinks-title">
-<h3>Drinks Menu 1</h3> 
-</div>
+            <div class="drinks-menu-container">
+                <div class="drinks-title">
+                    <h3>Drinks Menu 1</h3> 
+                </div>
     
-<div class="drinks-menu1">
-    <ul>
-        <li>Drink...............1</li>
-        <li>Drink...............3</li>
-        <li>Drink...............5</li>
-        <li>Drink...............7</li>
-    </ul>
-</div>
-<div class="drinks-menu1">
-    <ul>
-        <li>Drink...............2</li>
-        <li>Drink...............4</li>
-        <li>Drink...............6</li>
-        <li>Drink...............8</li>
-    </ul>
-</div>
-</div>
+                <div class="drinks-menu1">
+                    <ul>
+                        <li>Drink...............1</li>
+                        <li>Drink...............3</li>
+                        <li>Drink...............5</li>
+                        <li>Drink...............7</li>
+                    </ul>
+                </div>
+                <div class="drinks-menu1">
+                    <ul>
+                        <li>Drink...............2</li>
+                        <li>Drink...............4</li>
+                        <li>Drink...............6</li>
+                        <li>Drink...............8</li>
+                    </ul>
+                </div>
+                </div>
     
-<div class="drinks-menu-container">
-<div class="drinks-title">
-<h3>Drinks Menu 1</h3> 
-</div>
+            <div class="drinks-menu-container">
+                <div class="drinks-title">
+                    <h3>Drinks Menu 1</h3> 
+                </div>
     
-<div class="drinks-menu1">
-    <ul>
-        <li>Drink...............1</li>
-        <li>Drink...............3</li>
-        <li>Drink...............5</li>
-        <li>Drink...............7</li>
-    </ul>
-</div>
-<div class="drinks-menu1">
-    <ul>
-        <li>Drink...............2</li>
-        <li>Drink...............4</li>
-        <li>Drink...............6</li>
-        <li>Drink...............8</li>
-    </ul>
-</div>
-</div>
+                    <div class="drinks-menu1">
+                    <ul>
+                        <li>Drink...............1</li>
+                        <li>Drink...............3</li>
+                        <li>Drink...............5</li>
+                        <li>Drink...............7</li>
+                    </ul>
+                    </div>
+                
+                    <div class="drinks-menu1">
+                    <ul>
+                        <li>Drink...............2</li>
+                        <li>Drink...............4</li>
+                        <li>Drink...............6</li>
+                        <li>Drink...............8</li>
+                    </ul>
+                    </div>
+                
+                    </div>
     
-<div class="drinks-menu-container">
-<div class="drinks-title">
-<h3>Drinks Menu 1</h3> 
-</div>
+                    <div class="drinks-menu-container">
+                    <div class="drinks-title">
+                    <h3>Drinks Menu 1</h3> 
+                    </div>
     
-<div class="drinks-menu1">
-    <ul>
-        <li>Drink...............1</li>
-        <li>Drink...............3</li>
-        <li>Drink...............5</li>
-        <li>Drink...............7</li>
-    </ul>
-</div>
-<div class="drinks-menu1">
-    <ul>
-        <li>Drink...............2</li>
-        <li>Drink...............4</li>
-        <li>Drink...............6</li>
-        <li>Drink...............8</li>
-    </ul>
-</div>
-</div>    
-</div>
-</div>
-
-<div class="sample-only">
-<pre>
-<code>         
-&lt;div class="drinks"&gt;
+                    <div class="drinks-menu1">
+                    <ul>
+                        <li>Drink...............1</li>
+                        <li>Drink...............3</li>
+                        <li>Drink...............5</li>
+                        <li>Drink...............7</li>
+                    </ul>
+                    </div>
+                    <div class="drinks-menu1">
+                    <ul>
+                        <li>Drink...............2</li>
+                        <li>Drink...............4</li>
+                        <li>Drink...............6</li>
+                        <li>Drink...............8</li>
+                    </ul>
+                    </div>
+            </div>    
+        </div>
+        </div>
+    </div>
+   <div class="components-code">
+    <pre>
+    <code>
+ &lt;div class="drinks"&gt;
 &lt;div class="drinks-container"&gt;
 &lt;div class="drinks-header"&gt;
 &lt;h1&gt;Drinks page&lt;/h1&gt;    
@@ -283,20 +273,24 @@
 &lt;/div&gt;
     
 &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-              </div>
-              </div>
-          </div>
-<!--End of DRINKS COMPONENT-->
-              
-<!--ACTIVITIES COMPONENT-->
-          <div class="col-md-8">
-          <h2 id="ActivitiesComponent" class="top-spacing">Activities Component</h2>
-          <p>The purpose of this component is to put out in display the activities that are to be held at the local. It can display the schedule of activities that are to come soon or not far from the future.</p>
-          <h3>Classes</h3>
-          <ul class="classes-used">
+&lt;/div&gt; 
+    </code> 
+    </pre>
+    </div>
+    </div>
+<!-- END OF DRINKS COMPONENT -->
+
+<!-- ACTIVITIES COMPONENT -->
+<div class="components">
+    <div class="components-title">
+    <h2 id="ActivitiesComponent">Activities Component</h2>
+    </div>
+    <div class="components-desc">
+         <p>The purpose of this component is to put out in display the activities that are to be held at the local. It can display the schedule of activities that are to come soon or not far from the future.</p>
+    </div>
+    <div class="components-classes">
+        <h3>Classes</h3>
+        <ul>
             <li>.activities</li>
               <li>.activities-container
               <ul>
@@ -310,10 +304,10 @@
               </ul>
             </li>
           </ul>
-           
-          <div id="css-components" class="content-area">
-          <h3 id="activities-component">Activities Component</h3>
-           <div class="activities">
+    </div>
+
+     <div class="components-display">
+    <div class="activities">
 <div class="activities-container">
     <div class="activities-title">
     <h1>Activities</h1>  
@@ -343,10 +337,11 @@
     
     </div>
     </div>
-<div class="sample-only">
-<pre>
-<code>               
-  &lt;div class="activities"&gt;
+    </div>
+      <div class="components-code">
+    <pre>
+    <code>
+&lt;div class="activities"&gt;
 &lt;div class="activities-container"&gt;
     &lt;div class="activities-title"&gt;
     &lt;h1&gt;Activities&lt;/h1&gt;  
@@ -376,22 +371,23 @@
     
     &lt;/div&gt;
     &lt;/div&gt;
-            
-              
-              
-              </code>
-</pre>
-              </div>
-              </div>
-              </div>
-<!--End of ACTIVITIES COMPONENT-->
-              
-<!--FAQ COMPONENT-->
- <div class="col-md-8">
-          <h2 id="FAQComponent" class="top-spacing">FAQ Component</h2>
+    </code>
+    </pre>
+    </div>
+    </div> 
+<!-- END OF ACTIVITIES COMPONENT -->
+
+<!-- FAQ COMPONENT -->
+<div class="components">
+    <div class="components-title">
+    <h2 id="FAQComponent">FAQ Component</h2>
+    </div>
+    <div class="components-desc">
           <p>This component is meant to put on display the frequently asked questions by users about JavaJam. This component's number of questions and answers can be easily altered to meet the needs of both the owner and the people.</p>
-          <h3>Classes</h3>
-          <ul class="classes-used">
+    </div>
+    <div class="components-classes">
+        <h3>Classes</h3>
+          <ul>
               <li>.faq
               <ul>
                   <li>.faq-container
@@ -406,9 +402,10 @@
               </ul>
               </li>
           </ul>
-          <div id="css-components" class="content-area">
-          <h3 id="faq-component">FAQ Component</h3>
-          <div class="faq">
+    </div>
+
+     <div class="components-display">
+   <div class="faq">
 <div class="faq-container">
 <div class="faq-title">
     <h1>F.A.Q.</h1>
@@ -440,9 +437,9 @@
     
 </div>
 </div>    
-            <div class="sample-only">
-<pre>
-<code>    
+      <div class="components-code">
+    <pre>
+    <code>
 &lt;div class="faq"&gt;
 &lt;div class="faq-container"&gt;
 &lt;div class="faq-title"&gt;
@@ -475,22 +472,25 @@
     
 &lt;/div&gt;
 &lt;/div&gt;
+    </code>
+    </pre>
+    </div>
+    </div>    
+    </div>
+<!-- END OF FAQ COMPONENT -->
 
-
-              </code>
-</pre>
-              </div>
-              </div>
-              </div>
-<!--End of FAQ COMPONENT-->
-              
-<!--GALLERY COMPONENT-->
- <div class="col-md-8">
-          <h2 id="GalleryComponent" class="top-spacing">Gallery Component</h2>
-          <p>The purpose of this component is to provide users with visuals from JavaJam. Images can not only be changed, but also added to this Gallery. Computer users can use the mouse to hover over the pictures to obtain a slightly bigger image of the picture they are currently over. Phone users, however, will need to click on the image to obtain a bigger picture.</p>
-          <h3>Classes</h3>
-          <ul class="classes-used">
-            <li>.gallery
+<!-- GALLERY COMPONENT -->
+<div class="components">
+    <div class="components-title">
+    <h2 id="GalleryComponent">Gallery Component</h2>
+    </div>
+    <div class="components-desc">
+        <p>The purpose of this component is to provide users with visuals from JavaJam. Images can not only be changed, but also added to this Gallery. Computer users can use the mouse to hover over the pictures to obtain a slightly bigger image of the picture they are currently over. Phone users, however, will need to click on the image to obtain a bigger picture.</p>
+    </div>
+    <div class="components-classes">
+        <h3>Classes</h3>
+          <ul>
+              <li>.gallery
             <ul>
                 <li>.gallery-container</li>
                 <ul>
@@ -506,13 +506,13 @@
                  <li>.gallery-picture-preview a:hover span</li>
                  <li>.gallery-picture-preview a:hover span img</li>
                 </ul>
-            </ul>  
-            </li>
-          </ul>
-          <div id="css-components" class="content-area">
-          <h3 id="gallery-component">Gallery Component</h3>
-              
-              <div id="gallery">
+            </ul>
+        </li>
+        </ul>
+    </div>
+
+     <div class="components-display">
+   <div id="gallery">
       <div class="gallery-container">
       <div class="gallery-title">
          <h1>Image Gallery</h1>
@@ -551,11 +551,10 @@
       </div>
         </div>
         </div>
-
-  <div class="sample-only">
-<pre>
-<code>   
-      &lt;div id="gallery"&gt;
+      <div class="components-code">
+    <pre>
+    <code>
+&lt;div id="gallery"&gt;
       &lt;div class="gallery-container"&gt;
       &lt;div class="gallery-title"&gt;
          &lt;h1&gt;Image Gallery&lt;/h1&gt;
@@ -594,33 +593,15 @@
       &lt;/div&gt;
         &lt;/div&gt;
         &lt;/div&gt;
-             </code>
-</pre>
-              </div>
-              </div>
-              </div>
-              
-              
-<!--End of GALLERY COMPONENT-->
-        <div class="col-md-4 toc">
-          <h3>Table of Contents</h3>
-          <ul>
-            <li><a href="#BioComponent">Bio Component</a></li>
-            <li><a href="#DrinkComponent">Drink Component</a></li>
-            <li><a href="#ActivitiesComponent">Activities Component</a></li>
-            <li><a href="#FAQComponent">FAQ Component</a></li>
-            <li><a href="#GalleryComponent">Gallery Component</a></li>
-            <li class="backToTop"><a href="#nav">back to top <i class="fa fa-long-arrow-up" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
+    </code>
+    </pre>
     </div>
-  <div id="footer" class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>All rights reserved to Carlos Cucalon</p>
-      </div>
-    </div>
-  </div>
-  </body>
+    </div>    
+    </div>    
+<!-- END OF GALLERY COMPONENT -->
+</main>
+<footer>
+    Logo Rights reserved to &copy; Carlos Cucalon
+</footer>
+</body>
 </html>
