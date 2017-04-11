@@ -8,7 +8,13 @@
 <header>
 <div class="components">
 <nav class="navbar">
-            
+            <a href="#BasicSetUp">HTML Basic Set Up</a>
+            <a href="#HeadAndNav">Header &amp; Navigation</a>
+            <a href="#Typography">Typography</a>
+            <a href="#Headings">Headings</a>
+            <a href="#BodyCopy">Body copy</a>
+            <a href="#Bold">Bold</a>
+            <a href="#Lists">Lists</a>
             <a href="BEM.html">Css/Components</a>
 
 </nav>
@@ -16,7 +22,7 @@
 </header>
 <main class="main">
 <div class="components">
-<h1>HTML Basic Set UP</h1>
+<h1 id="BasicSetUp">HTML Basic Set Up</h1>
 <pre>
 <code>
 &lt;!DOCTYPE html&gt;
@@ -35,7 +41,7 @@
 </code>
 </pre>
     
-<h1>Header &amp; Navigation</h1>
+<h1 id="HeadAndNav">Header &amp; Navigation</h1>
 <div class="navig">
 <div class="navflex">
   <a href="#Home"><img src="https://enlightenment.design/wp-content/uploads/2017/03/JavaJam-Logo-4C.png" id="logo" /></a>
@@ -65,8 +71,10 @@
 
 </code>
 </pre>  
-            <h1>Typography</h1>
+    <h1 id="Typography">Typography</h1>
+    <div class="components-desc">
             <p>The following fonts are used for this site:</p>
+    </div>
             <ul>
               <li><strong>Headings:</strong><br />
                 <code>font-family: Arial, Times New Roman, sans-serif;</code>
@@ -76,25 +84,26 @@
               </li>
             </ul>
     
-    <h1>Headings</h1>
+    <h1 id="Headings">Headings</h1>
+    <div class="components-desc">
             <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h4&gt;</code>, are available. .h1 through .h4 classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
-            <div class="sample">
-              <table class="table">
+    </div>
+              <table>
                 <tr>
                   <td><h1>h1. Heading</h1></td>
-                  
+                  <td>3.375em</td>
                 </tr>
                 <tr>
                   <td><h2>h2. Heading</h2></td>
-                  
+                  <td>2.25em</td>
                 </tr>
                 <tr>
                   <td><h3>h3. Heading</h3></td>
-                  
+                  <td>1.5em</td>
                 </tr>
                 <tr>
                   <td><h4>h4. Heading</h4></td>
-                  
+                  <td>1em</td>
                 </tr>
               </table>
               <pre>
@@ -105,10 +114,85 @@
 &lt;h4&gt;h4. Heading&lt;/h4&gt;
             </code>
             </pre>
-            </div>
 
-    
-</div>
+ <h1 id="BodyCopy">Body copy</h1>
+    <div class="components-desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ipsum vehicula, ultricies libero id, consequat ante. Nullam a dolor at ante faucibus laoreet. Proin quis interdum risus. Vivamus consectetur rutrum nibh, posuere consectetur sem pulvinar ac.</p>
+              <p>Etiam convallis felis augue, et venenatis ante mollis vel. Nunc sed purus ultrices, mollis velit eu, suscipit nisi. Aliquam varius turpis nec leo bibendum finibus. Integer est ligula, ultricies et justo nec, rhoncus gravida neque.</p>
+              <p>Morbi efficitur bibendum tellus nec sollicitudin. Cras imperdiet lectus et semper tempus. Pellentesque efficitur sodales elit. Donec a suscipit urna, a semper leo.</p>
+    </div>
+              <pre>
+            <code>
+&lt;p&gt;...&lt;/p&gt;
+            </code>
+            </pre>
+
+            <h1 id="Bold">Bold</h1>
+              <p><strong>Consectetur adipiscing elit.</strong></p>
+              <pre>
+            <code>
+&lt;p&gt;&lt;strong&gt;Consectetur adipiscing elit.&lt;/strong&gt;&lt;/p&gt;
+            </code>
+            </pre>
+
+            <h1 id="Lists">Lists</h1>
+            <h3>Ordered List</h3>
+              <ol>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Phasellus lacinia dui id lacus scelerisque maximus.</li>
+                <li>Duis porttitor turpis eget eros accumsan aliquet.
+                  <ol>
+                    <li>Quisque pellentesque lacus sit amet ex volutpat venenatis.</li>
+                    <li>Sed ornare velit vitae sem mollis molestie.</li>
+                  </ol>
+                </li>
+                <li>Aenean quis nibh rutrum, hendrerit nunc sit amet, condimentum dui.</li>
+              </ol>
+              <pre>
+            <code>
+&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+            </code>
+            </pre>
+
+            <h3>Unordered List</h3>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Phasellus lacinia dui id lacus scelerisque maximus.</li>
+                <li>Duis porttitor turpis eget eros accumsan aliquet.
+                  <ul>
+                    <li>Quisque pellentesque lacus sit amet ex volutpat venenatis.</li>
+                    <li>Sed ornare velit vitae sem mollis molestie.</li>
+                  </ul>
+                </li>
+                <li>Aenean quis nibh rutrum, hendrerit nunc sit amet, condimentum dui.</li>
+              </ul>
+              <pre>
+            <code>
+&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+            </code>
+            </pre>
+            <h3>Inline List</h3>
+            <div class="inline">
+              <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Phasellus lacinia</li>
+                <li>Duis porttitor turpis</li>
+                <li>Aenean quis nibh rutrum</li>
+              </ul>
+            </div>
+              <pre>
+            <code>
+&lt;ul class="inline"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+            </code>
+            </pre>
+
+     </div>
 </main>
 <footer>
     Logo Rights reserved to &copy; Carlos Cucalon
