@@ -1,0 +1,51 @@
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+form {
+  width: 60%;
+  margin: auto;
+}
+
+form fieldset {
+  padding: 1rem;
+  text-align: center;
+}
+
+.form-group {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    
+    align-content: center;
+    margin-bottom: 1rem
+}
+
+.form-control {
+  flex: 1 20%;
+  
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  
+  align-content: center;
+}
+
+.form-control input,
+.form-control textarea {
+  margin-bottom: 0.5rem;
+  padding: 0.24rem;
+  font-size: 1em;
+}

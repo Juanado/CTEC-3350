@@ -1,0 +1,135 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+     <link rel="stylesheet" href="Assets/css/navbarstyle.css">
+     <link rel="stylesheet" href="Assets/css/PageContainer.css">
+     <link rel="stylesheet" href="Assets/css/JobsStyle.css">
+    
+</head>
+<body class="body-container">
+
+<nav>
+<div  class="nav-container">
+<div class="navig">
+  <a href="home.html"><img src="https://enlightenment.design/wp-content/uploads/2017/03/JavaJam-Logo-4C.png" id="logo" /></a>
+  <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="menus.html">Menus</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+<main>
+
+<div class="job-container">
+<h1>Available Jobs</h1>
+<ul>
+	<li>Barista</li>
+	<li>Cashier</li>
+	<li>Janitor</li>
+    <li>Manager</li>
+</ul>
+</div>
+    
+<div class="application-container">
+   <form method="post" action="registration.php" name="registration">
+        <fieldset>
+            <legend>Application/Registration</legend>
+            
+            <h3>Account Set Up</h3>
+            <div class="form-group">
+            <label for="name">Full Name</label>
+            <div class="form-control">
+            <input type="text" name="name" id="name" placeholder="name"/>
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="Email">E-mail:</label>
+            <div class="form-control">
+            <input type="text" name="Email" id="Email" placerholder="E-mail" maxlenght="40" placeholder="E-Mail">
+            </div>
+            </div>
+            
+            <h3>Jobs of Interest</h3>
+            <div class="form-group">
+            <label for="socialmedia">Select the Jobs you wish to apply to:</label>
+            <div class="form-control">
+            <label><input type="checkbox" name="job" id="jobs" value="Barista"/>Barista</label>
+            <label><input type="checkbox" name="job" value="Cashier" />Cashier</label>
+            <label><input type="checkbox" name="job" value="Janitor" />Janitor</label>
+            <label><input type="checkbox" name="job" value="Manager" />Manager</label>
+            </div>
+            </div>
+
+            <h3>Mailing Information</h3>
+            <div class="form-group">
+            <label for="firstName">FirstName:</label>
+            <div class="form-control">
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+            </div>
+            </div>
+        
+            <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <div class="form-control">
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+            </div>
+            </div>
+            
+            <div class="form-group">
+            <label for="streetaddress">Street Address:</label>
+            <div class="form-control">
+            <input type="text" name="streetaddress" id="streetaddress" placeholder="streetaddress"/>
+            </div>
+            </div>
+            
+            <div class="form-group">
+            <label for="city">City:</label>
+            <div class="form-control">
+            <input type="text" name="city" id="city" placeholder="City"/>
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="state">State:</label>
+            <div class="form-control">
+            <input type="text" name="state" id="state" maxlength="2" placeholder="ST" />
+            </div>
+            </div>
+            
+            <div class="form-group">
+            <label for="zipcode">Zip Code:</label>
+            <div class="form-control">
+            <input type="number" name="zipcode" id="zipcode" placeholder="XXXX"/>
+            </div>
+            </div>
+
+            <h3>Other Relevant Information</h3>
+            <div class="form-group">
+            <div class="form-control">
+            <textarea name="comments" id="comments" cols="40" rows="6" placeholder="Any kind of relevant skill or experience."></textarea>
+            </div>
+            </div>
+            <div class="button">
+            <input type="submit" value="Submit">
+            </div>
+        </fieldset>   
+    </form>
+</div>
+</main>
+<footer>
+ <p>
+  <a href="credits.html">List of references and credits</a> 
+ </p>
+ <p>
+ Learn <a href="about.html">about us!</a>   
+ </p>
+</footer>    
+</body>
+</html>

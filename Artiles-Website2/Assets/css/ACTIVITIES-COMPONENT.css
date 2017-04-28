@@ -1,0 +1,65 @@
+.activities{
+    margin: 0 auto;
+    max-width: 700px;
+}
+.activities-container{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  border: 1px clear black;
+}
+.activities-title{
+  order: 1;
+  flex: 1 100%;
+  flex-grow: 2;
+  padding: 0.625rem;
+  background-color: #444444;
+  text-align: center;
+  color: white;
+  margin: 5px;
+}
+
+.activities-title h1{
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.activities-title h2{
+
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+
+.activities-Current{
+  order: 2;
+  flex: 1 40%;
+  text-align: center;
+  border: 1px clear black;
+  margin: 5px;
+}
+
+.activities-Upcoming{
+  order: 3;
+  flex: 1 40%;
+  text-align: center;
+  border: 1px clear black;
+  margin: 5px;
+}
+
+.activities ul{
+    list-style-type: none;
+    margin: 2px;
+    text-align: left;
+}
+
+.activities ul li:hover{
+    background-color: grey;
+}

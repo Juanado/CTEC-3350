@@ -1,0 +1,84 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+     <link rel="stylesheet" href="Assets/css/navbarstyle.css">
+     <link rel="stylesheet" href="Assets/css/PageContainer.css">
+     <link rel="stylesheet" href="Assets/css/SignUpStyle.css">
+     <link rel="stylesheet" href="Assets/css/stylesz.css">
+</head>
+<body class="body-container">
+
+<nav>
+<div  class="nav-container">
+<div class="navig">
+  <a href="home.html"><img src="https://enlightenment.design/wp-content/uploads/2017/03/JavaJam-Logo-4C.png" id="logo" /></a>
+  <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="menus.html">Menus</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+<main>
+
+<h1>Sign-Up Form</h1>
+
+<form method="post" action="registration.php" name="registration">
+<fieldset>
+            <legend>Customer Registration</legend>
+            
+            <h3>Name and E-mail</h3>
+            <div class="form-group">
+            <div class="form-control">
+            <input type="text" name="name" id="name" placeholder="Your Name"/>
+            </div>
+            </div>
+
+            <div class="form-group">
+            <div class="form-control">
+            <input type="text" name="Email" id="Email" maxlenght="40" placeholder="E-mail">
+            </div>
+            </div>
+
+            <h3>Date of choice</h3>
+            <div class="form-group">
+            <div class="form-control">
+            <input type="text" name="Email" id="Email" placeholder="MM/DD/YYYY">
+            </div>
+            </div>
+            
+    
+            <h3>Activity Description</h3>
+            <div class="form-group">
+            <div class="form-control">
+            <input type="text" name="activity" id="activity" placeholder="Name of Activity"/>
+            </div>
+            </div>
+
+            
+            <div class="form-group">
+            <div class="form-control">
+            <textarea name="comments" id="comments" cols="40" rows="6" placeholder="Description of Activity"></textarea>
+            </div>
+            </div>
+            <input type="submit" value="Submit">
+        </fieldset>   
+
+</form>
+
+</main>
+<footer>
+ <p>
+  <a href="credits.html">List of references and credits</a> 
+ </p>
+ <p>
+ Learn <a href="about.html">about us!</a>   
+ </p>
+</footer>    
+</body>
+</html>

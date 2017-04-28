@@ -1,0 +1,93 @@
+body {
+    margin: 0 auto;
+    max-width: 80%;
+    font-family: Arial, Times New Roman, sans-serif;
+    background-image: url("../images/wood-background.jpg");
+    color: white;
+}
+
+.body-container{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: column;
+  align-content: column;
+  border: 1px clear #444444;
+}
+
+.nav-container .navig {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border: 1px clear #444444;
+}
+
+.nav-container ul{
+    align-items: center;
+    align-content: center;
+}
+
+.main-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  border: 1px clear #444444;
+}
+
+
+footer{
+    text-align: center;
+}
+
+footer p a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* RESPONSIVE NAVIGATION DESIGN */
+@media only screen and (max-width: 636px){
+  .nav-container .navig {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+}
+
+@media only screen and (min-width: 637px) and (max-width: 1024px){
+  .nav-container .navig {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+}
+
+@media only screen and (min-width: 1025px){
+  .nav-container .navig {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border: 1px clear #444444;
+}
+}
